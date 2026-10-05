@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gustavo Henrique E. M. Meireles – Oracle Database Administrator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Gustavo Henrique E. M. Meireles - Oracle Database Administrator" />
+
+  <style>
+    :root{
+      --bg:#0b0f16;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,0.72);
+      --line:rgba(255,255,255,0.16);
+      --card:#0f1623;
+      --cardLine:rgba(255,255,255,0.10);
+      --link:#64b5ff;
+    }
+
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      margin:0;
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(100,181,255,0.12), transparent 50%),
+                  radial-gradient(900px 500px at 90% 10%, rgba(255,54,33,0.10), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:56px 18px 72px;
+    }
+
+    h1{
+      font-size:clamp(34px,4.2vw,56px);
+      margin:0 0 10px;
+      letter-spacing:-0.02em;
+      font-weight:900;
+    }
+
+    .subtitle{
+      color:var(--muted);
+      font-size:1.08rem;
+      margin-bottom:14px;
+      font-weight:650;
+    }
+
+    .pill-row{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-bottom:14px;
+    }
+
+    .pill{
+      display:inline-block;
+      border:1px solid var(--cardLine);
+      background:rgba(255,255,255,0.06);
+      border-radius:999px;
+      padding:7px 11px;
+      font-size:0.92rem;
+      color:rgba(255,255,255,0.88);
+      backdrop-filter: blur(8px);
+    }
+
+    .lead{
+      max-width:920px;
+      margin:0 0 18px;
+      color:rgba(255,255,255,0.88);
+      font-size:1.03rem;
+    }
+
+    a{
+      color:var(--link);
+      text-decoration:none;
+      font-weight:750;
+    }
+    a:hover{ text-decoration:underline; }
+
+    .top-links{
+      margin-top:10px;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .section-title{
+      margin-top:58px;
+      margin-bottom:14px;
+      font-size:1.55rem;
+      border-bottom:2px solid var(--line);
+      padding-bottom:10px;
+      font-weight:900;
+      letter-spacing:-0.01em;
+    }
+
+    .divider{
+      height:1px;
+      width:100%;
+      background:var(--line);
+      margin: 16px 0 8px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+      margin-top:18px;
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      border:1px solid var(--cardLine);
+      border-radius:14px;
+      padding:18px 18px 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .card h3{
+      margin:0 0 6px;
+      font-size:1.12rem;
+      letter-spacing:-0.01em;
+      font-weight:900;
+    }
+
+    .card .meta{
+      margin:0 0 12px;
+      color:var(--muted);
+      font-size:0.95rem;
+      font-weight:650;
+    }
+
+    .card p{
+      margin:0 0 12px;
+      color:rgba(255,255,255,0.88);
+      font-size:0.98rem;
+    }
+
+    .card p:last-child{
+      margin-bottom:0;
+    }
+
+    .tech-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin:16px 0 28px;
+      align-items:center;
+    }
+
+    .badge{
+      padding:12px 16px;
+      font-weight:900;
+      font-size:13px;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:#fff;
+      border:1px solid rgba(255,255,255,0.08);
+      background:rgba(255,255,255,0.06);
+      border-radius:8px;
+    }
+
+    .python{background:#3776AB;}
+    .ruby{background:#CC342D;}
+    .rails{background:#CC0000;}
+    .javascript{background:#F7DF1E; color:#111;}
+    .c{background:#00599C;}
+    .sql{background:#336791;}
+    .oracle{background:#F80000;}
+    .github{background:#111111;}
+    .git{background:#F05032;}
+
+    .tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+    }
+
+    .tag{
+      display:inline-block;
+      background:rgba(100,181,255,0.15);
+      border:1px solid rgba(100,181,255,0.3);
+      border-radius:6px;
+      padding:4px 10px;
+      font-size:0.85rem;
+      color:rgba(100,181,255,0.9);
+    }
+
+    footer{
+      margin-top:70px;
+      padding-top:28px;
+      border-top:1px solid var(--line);
+      color:rgba(255,255,255,0.72);
+      font-size:0.95rem;
+    }
+
+    @media (max-width:640px){
+      .badge{font-size:12px; padding:10px 14px;}
+      .grid{gap:14px;}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Gustavo Henrique E. M. Meireles</h1>
+    <div class="subtitle">Database Administrator | Performance, High Availability & Troubleshooting | Database Migrations | Oracle Linux | Ansible</div>
+
+    <div class="pill-row">
+      <span class="pill">Database Administrator</span>
+      <span class="pill">Database Migrations</span>
+      <span class="pill">Database Performance, High Availability & Troubleshooting</span>
+      <span class="pill">Oracle Linux</span>
+      <span class="pill">Ansible</span>
+    </div>
+
+    <p class="lead">
+    Oracle DBA at Dataunique Tecnologia, working in multi-client corporate environments. Specialized in administering Oracle Database versions 11g, 12c, 19c, and 23ai, with a focus on performance diagnostics, high availability, backup and recovery (RMAN), CDB/PDB architecture, and storage management.
+
+	Bachelor’s degree in Information Systems – Federal Institute of Goiás (IFG), Goiânia Campus.
+	
+	According to the DISC assessment, I have a sociable, peaceful, and balanced profile that values ​​relationship-building. My strengths include a willingness to help others and a tendency to seek balance and harmony in my actions. I am skilled at identifying the needs of clients and team members, often fostering engagement and delegating tasks to ensure everyone participates in the work. I pursue results with positivity and enthusiasm through team interaction and a steady work pace.
+	
+	Passionate about music, synthesizers, technology, sports, and geopolitics.
+    </p>
+
+    <div class="top-links">
+      <a href="https://github.com/gustavohmeireles" target="_blank" rel="noopener">
+        GitHub Profile
+      </a>
+      <a href="https://linkedin.com/in/gustavo-henrique-e-m-meireles/" target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+      <a href="mailto:gustavohmeireles@gmail.com">Contact Me</a>
+    </div>
+
+    <h2 class="section-title">Core Skills & Technologies</h2>
+
+    <div class="tech-badges">
+	  <span class="badge sql">SQL</span>
+      <span class="badge oracle">Oracle Database</span>
+      <span class="badge OL">Oracle Linux</span>
+      <span class="badge shell">Shell</span>
+      <span class="badge python">Python</span>
+      <span class="badge ruby">Ruby</span>
+      <span class="badge RonR">Ruby on Rails</span>
+      <span class="badge javascript">JavaScript</span>
+      <span class="badge c">C</span>
+      <span class="badge github">GitHub</span>
+      <span class="badge git">Git</span>
+    </div>
+
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="grid">
+
+      <!-- Project 1: Sistema de Cotas -->
+      <div class="card">
+        <h3>Sistema de Convocação de Candidatos com Cotas</h3>
+        <p class="meta">C · Data Structures · Automated Candidate Management</p>
+        <p>
+          An automated candidate recruitment system with support for quota-based selection (PPI and PCD affirmative action). 
+          This project demonstrates proficiency in C, advanced data structures, queue management, and the ability to implement 
+          complex business logic for fair candidate processing.
+        </p>
+        <div class="tags">
+          <span class="tag">C Language</span>
+          <span class="tag">Data Structures</span>
+          <span class="tag">Algorithm Design</span>
+        </div>
+        <a href="https://github.com/gustavohmeireles/concurso-cotas-fila" target="_blank" rel="noopener">
+          View on GitHub →
+        </a>
+      </div>
+
+      <!-- Project 2: Data Structures -->
+      <div class="card">
+        <h3>Estrutura de Dados - Double Linked List</h3>
+        <p class="meta">C · Advanced Data Structures</p>
+        <p>
+          A comprehensive implementation of doubly-linked lists in C, demonstrating deep understanding of pointer manipulation, 
+          memory management, and advanced data structure concepts. Built for classroom education and practical reference.
+        </p>
+        <div class="tags">
+          <span class="tag">C Language</span>
+          <span class="tag">Linked Lists</span>
+          <span class="tag">Pointers & Memory</span>
+        </div>
+        <a href="https://github.com/gustavohmeireles/estrutura_de_dados" target="_blank" rel="noopener">
+          View on GitHub →
+        </a>
+      </div>
+
+
+      <!-- Project 4: SiGE -->
+      <div class="card">
+        <h3>SiGE - Sistema de Gerência de Eventos</h3>
+        <p class="meta">Full Stack · Event Management System</p>
+        <p>
+          An event management system designed to handle event creation, registration, scheduling, and participant tracking. 
+          Demonstrates ability to architect and build complete business solutions with proper data modeling and user management.
+        </p>
+        <div class="tags">
+          <span class="tag">Event Management</span>
+          <span class="tag">Full Stack</span>
+          <span class="tag">Database Design</span>
+        </div>
+        <a href="https://github.com/gustavohmeireles/sige" target="_blank" rel="noopener">
+          View on GitHub →
+        </a>
+      </div>
+
+      <!-- Project 5: IBC App -->
+      <div class="card">
+        <h3>IBC App</h3>
+        <p class="meta">Ruby · Ruby on Rails</p>
+        <p>
+          A Ruby on Rails application showcasing expertise in rapid web application development and the Rails framework ecosystem. 
+          Demonstrates knowledge of MVC architecture, Rails conventions, and professional web development practices.
+        </p>
+        <div class="tags">
+          <span class="tag">Ruby</span>
+          <span class="tag">Rails</span>
+          <span class="tag">MVC Architecture</span>
+        </div>
+        <a href="https://github.com/gustavohmeireles/ibc_app" target="_blank" rel="noopener">
+          View on GitHub →
+        </a>
+      </div>
+
+      <!-- Project 6: Open Source Contribution -->
+      <div class="card">
+        <h3>Open Source Contributions</h3>
+        <p class="meta">Community · Learning · Digital Innovation One</p>
+        <p>
+          Active contributor to open-source projects and participant in community learning initiatives through Digital Innovation One. 
+          Dedicated to sharing knowledge and improving the developer community through collaborative development and mentorship.
+        </p>
+        <div class="tags">
+          <span class="tag">Open Source</span>
+          <span class="tag">Community</span>
+          <span class="tag">Mentorship</span>
+        </div>
+        <a href="https://github.com/gustavohmeireles/dio-lab-open-source" target="_blank" rel="noopener">
+          View on GitHub →
+        </a>
+      </div>
+
+    </div>
+
+    <h2 class="section-title">Expertise Areas</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Data Engineering & Databases</h3>
+        <p>
+          Oracle DBA at Dataunique Tecnologia, working in multi-client corporate environments. Specialized in administering Oracle Database versions 11g, 12c, 19c, and 23ai, with a focus on performance diagnostics, high availability, backup and recovery (RMAN), CDB/PDB architecture, and storage management.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Full Stack Development</h3>
+        <p>
+          Capable of building complete web applications from database design through frontend implementation. 
+          Comfortable with multiple tech stacks including Python/C/JavaScript and Ruby/Rails.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div>📍 Brazil</div>
+      <div>🔗 <a href="https://linkedin.com/in/gustavo-henrique-e-m-meireles/">LinkedIn</a> · <a href="https://github.com/gustavohmeireles">GitHub</a></div>
+      <div style="margin-top:14px; color:rgba(255,255,255,0.55); font-size:0.9rem;">Built with ❤️ | Last updated: October 2026</div>
+    </footer>
+  </div>
+</body>
+</html>
